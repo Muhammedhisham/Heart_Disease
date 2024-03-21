@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Form</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/CSS/index.css">
+</head>
+<body>
+  <div id="A">
+    <div class="container">
+      <h2>Heart Disease Prediction</h2>
+      <form action="predict" method="post">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="text1">Age</label>
+            <input type="text" class="form-control" id="Age" name="Age" placeholder="Age">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="text2">Resting BP</label>
+            <input type="text" class="form-control" id="RestingBP" name="RestingBP" placeholder="Resting BP">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="text3">Cholesterol</label>
+            <input type="text" class="form-control" id="Cholesterol" name="Cholesterol" placeholder="Cholesterol">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="text4">Max HR</label>
+            <input type="text" class="form-control" id="MaxHR" name="MaxHR" placeholder="Max HR">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="text5">Old peak</label>
+            <input type="text" class="form-control" id="Oldpeak" name="Oldpeak" placeholder="Old peak">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="dropdown1">Gender</label>
+            <select class="form-control" id="dropdown1" name="Sex">
+              <option value="">--Choose--</option>
+
+              <option value="0">Female</option>
+              <option value="1">Male</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="dropdown2">Chest Pain Type</label>
+            <select class="form-control" id="dropdown2" name="ChestPainType">
+              <option value="">--Choose--</option>
+
+              <option value="1">ATA</option>
+              <option value="2">NAP</option>
+           <option value="0">ASY</optio>
+           <option value="3">TA</optio>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="dropdown3">Fasting BS</label>
+            <select class="form-control" id="dropdown3" name="FastingBS">
+              <option value="">--Choose--</option>
+
+              <option value="0">0</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="dropdown4">Resting ECG</label>
+            <select class="form-control" id="dropdown4" name="RestingECG"> 
+              <option value="">--Choose--</option>
+
+              <option value="1">Normal</option>
+              <option value="2">ST</option>
+              <option value="0">LVH</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="dropdown5">Exercise Angina</label>
+            <select class="form-control" id="dropdown5" name="ExerciseAngina">
+              <option value="">--Choose--</option>
+
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="dropdown5">ST Slope</label>
+            <select class="form-control" id="dropdown5" name="ST_Slope">
+              <option value="">--Choose--</option>
+              <option value="2">Up</option>
+              <option value="0">Down</option>
+              <option value="1">Flat</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+        <label for=""></label><br>
+        <button type="submit" class="btn btn-outline-light">SUBMIT</button>
+  
+        </div>
+        </div>
+        <div calss="form-row">
+          <br>
+          <label for="">The Prediction </label>
+          <input class="form-control" type="text" placeholder="{{prediction}}"  readonly>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
